@@ -1,0 +1,44 @@
+/* トップ（アプリ一覧）だけ、どのアプリの色でもない落ち着いた色にする。
+   骨組みは style.css をそのまま使い、ここでは変数と一覧の見た目だけ足す。 */
+
+:root {
+  --teal: #4a5568;
+  --teal-dark: #2d3748;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #a0aec0;
+    --teal-dark: #cbd5e0;
+  }
+}
+
+.apps {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.apps li {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  background: var(--surface);
+}
+
+.apps h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.apps p {
+  margin: 0 0 10px;
+  font-size: 0.94rem;
+}
+
+.apps .links a {
+  margin-right: 16px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
