@@ -1,0 +1,21 @@
+/* デコルテケアのページだけ、色をアプリに合わせる。
+   骨組みは ../style.css をそのまま使い、ここでは変数だけ差し替える。 */
+
+:root {
+  --teal: #6e5c9b;
+  --teal-dark: #4a3f63;
+  --surface: #f7f5fb;
+  --border: #e0dcec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #b9a9de;
+    --teal-dark: #d8c6f0;
+    --text: #e9e6f2;
+    --muted: #aca6c0;
+    --bg: #14131c;
+    --surface: #1e1d29;
+    --border: #2f2c3d;
+  }
+}
