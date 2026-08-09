@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜あるものごはん</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <h1>プライバシーポリシー</h1>
+    <p>あるものごはん</p>
+  </div>
+</header>
+
+<main>
+  <p class="meta">制定日: 2026年8月9日 / 最終更新日: 2026年8月9日</p>
+
+  <p class="lead">
+    <strong>当アプリは、利用者の個人情報を収集しません。</strong>
+    会員登録もログインもなく、記録はすべて端末内にのみ保存されます。
+    ただし、<strong>レシピを作るときだけは、選んだ食材と調味料の名前を
+    AI の提供事業者（Anthropic）へ送信します</strong>。
+    送るのは料理の条件だけで、利用者を識別できる情報は含みません（詳細は 3.）。
+    また、アプリを無料で提供するために
+    <strong>Google AdMob による広告を表示</strong>しており、広告配信の目的で
+    広告識別子などが第三者によって取得されることがあります（詳細は 4.）。
+  </p>
+
+  <h2>1. 運営者が収集する情報</h2>
+  <p>
+    当アプリの運営者は、氏名・メールアドレス・電話番号・住所・位置情報・連絡先など、
+    個人を識別できる情報を<strong>一切収集しません</strong>。
+    会員登録やログインを求めることもありません。
+    利用者が作ったレシピや作った記録を、運営者が閲覧できる仕組みはありません。
+  </p>
+
+  <h2>2. 端末内にのみ保存する情報</h2>
+  <p>
+    続きから使えるようにするため、以下を端末内のストレージにのみ保存します。
+    これらが運営者へ送信されることはありません。
+  </p>
+  <div class="table-scroll">
+    <table>
+      <tr>
+        <th>保存する内容</th>
+        <th>目的</th>
+      </tr>
+      <tr>
+        <td>うちの棚（持っている調味料の選択）</td>
+        <td>次回もその棚でレシピを作るため</td>
+      </tr>
+      <tr>
+        <td>保存したレシピ（料理名・材料・手順・材料費の目安）</td>
+        <td>あとから読み返すため</td>
+      </tr>
+      <tr>
+        <td>作った記録（日付と、その日に作ったレシピ）</td>
+        <td>カレンダーとふりかえりの表示のため</td>
+      </tr>
+      <tr>
+        <td>外食 1 食あたりの金額（利用者が設定した値）</td>
+        <td>ふりかえりで材料費の目安と比べるため</td>
+      </tr>
+      <tr>
+        <td>音と振動の設定</td>
+        <td>設定を次回起動時にも引き継ぐため</td>
+      </tr>
+      <tr>
+        <td>ストアの評価をお願いした日時と回数</td>
+        <td>短い間隔で繰り返しお願いしないようにするため</td>
+      </tr>
+      <tr>
+        <td>広告を表示した日時、利用を始めた日、レシピを作った回数</td>
+        <td>広告の表示を制御するため</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    これらはアプリをアンインストールすると端末から削除されます。
+    <strong>端末内にのみ保存されるため、機種変更やアプリの削除で失われます。</strong>
+    バックアップや復元の仕組みは提供していません。
+  </p>
+
+  <h2>3. レシピ生成のための外部送信（Anthropic）</h2>
+  <p>
+    当アプリのレシピは、Anthropic PBC が提供する AI（Claude）が作成します。
+    「レシピを作る」を押したときにだけ、以下の内容が
+    <strong>暗号化された通信（HTTPS）で Anthropic の API へ送信されます</strong>。
+  </p>
+  <div class="table-scroll">
+    <table>
+      <tr>
+        <th>送信する内容</th>
+        <th>例</th>
+      </tr>
+      <tr>
+        <td>選んだ食材の名前</td>
+        <td>玉ねぎ、じゃがいも、豚肉</td>
+      </tr>
+      <tr>
+        <td>「うちの棚」に登録された調味料の名前</td>
+        <td>塩、しょうゆ、サラダ油</td>
+      </tr>
+      <tr>
+        <td>何人分か</td>
+        <td>2人分</td>
+      </tr>
+      <tr>
+        <td>いつのごはんか（朝食・昼食・夕食）</td>
+        <td>夕食</td>
+      </tr>
+      <tr>
+        <td>調理時間の上限（指定した場合）</td>
+        <td>20分以内</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    <strong>送信するのは上記だけです。</strong>
+    氏名・メールアドレス・端末の識別子・位置情報・広告識別子・
+    保存したレシピ・作った記録・写真などは送信しません。
+    当アプリには自由入力の欄がなく、利用者が任意の文章を送る仕組みもありません。
+  </p>
+  <p>
+    通信は運営者が用意した API キーで行われるため、
+    <strong>Anthropic 側で送信内容が個々の利用者に結び付けられることはありません</strong>
+    （利用者ごとのアカウントを作らないため）。
+    送信された内容および生成されたレシピの取り扱いは、Anthropic のポリシーに従います。
+  </p>
+  <ul>
+    <li>
+      Anthropic のプライバシーポリシー:
+      <a href="https://www.anthropic.com/legal/privacy" rel="noopener">
+        Privacy Policy
+      </a>
+    </li>
+    <li>
+      API を通じて送信されたデータの取り扱い:
+      <a href="https://privacy.anthropic.com/" rel="noopener">
+        Anthropic Privacy Center
+      </a>
+    </li>
+  </ul>
+  <p>
+    レシピを作らないかぎり、この送信は発生しません。
+    保存したレシピを読み返す・カレンダーやふりかえりを見るといった操作は、
+    すべて端末内で完結します。
+  </p>
+
+  <h2>4. 広告について</h2>
+  <p>
+    当アプリは、アプリを無料で提供するために Google AdMob による広告
+    （バナー広告・全画面広告・動画リワード広告・起動時広告）を表示します。
+    <strong>選んだ食材・棚の内容・保存したレシピ・作った記録が
+    広告配信に渡されることはありません。</strong>
+  </p>
+  <p>
+    AdMob をはじめとする広告配信事業者は、利用者の興味に応じた広告を表示するために、
+    <strong>広告識別子（Android 広告 ID / iOS の IDFA）、おおよその位置情報、
+    端末情報、広告の表示・クリック履歴</strong>などを取得・利用する場合があります。
+    これらの情報は当アプリの運営者が取得・保有するものではなく、
+    各事業者のプライバシーポリシーにもとづいて取り扱われます。
+  </p>
+  <ul>
+    <li>
+      Google の広告におけるデータ利用:
+      <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">
+        ポリシーと規約
+      </a>
+    </li>
+    <li>
+      広告のパーソナライズ設定:
+      <a href="https://adssettings.google.com/" rel="noopener">Google 広告設定</a>
+    </li>
+  </ul>
+
+  <h2>5. 同意の取得と変更</h2>
+  <p>
+    欧州経済領域（EEA）・英国・スイスの利用者には、
+    Google のユーザーメッセージングプラットフォーム（UMP）を通じて、
+    パーソナライズド広告に関する同意をお伺いします。
+  </p>
+  <p>
+    iOS では、「トラッキングの許可」を求めるダイアログが表示されます。
+    <strong>許可しない場合でも、当アプリのすべての機能をご利用いただけます</strong>
+    （表示される広告が利用者の興味に基づかないものになります）。
+    許可の設定は、iOS の「設定 &gt; プライバシーとセキュリティ &gt; トラッキング」から変更できます。
+  </p>
+
+  <h2>6. ストアの評価のお願いについて</h2>
+  <p>
+    当アプリは、一定の条件を満たしたときに、OS の標準機能を通じて
+    ストアの評価用ダイアログの表示を依頼することがあります。
+    このとき、<strong>当アプリからレシピや記録の内容が渡されることはありません</strong>。
+    依頼するかどうかの判断は、すべて端末内で行われます。
+  </p>
+
+  <h2>7. 解析ツール</h2>
+  <p>
+    当アプリはアクセス解析ツールやクラッシュレポートの仕組みを組み込んでいません。
+    利用者の行動ログを運営者が収集・保有することはありません。
+  </p>
+
+  <h2>8. お子様のプライバシー</h2>
+  <p>
+    当アプリは、火や刃物を使う調理を扱う性質上、
+    調理に慣れた方のご利用を想定しています。
+    運営者が個人情報を収集することはありませんが、
+    上記のとおり広告配信事業者による情報の取得が行われます。
+  </p>
+
+  <h2>9. 本ポリシーの変更</h2>
+  <p>
+    法令の変更やアプリの機能追加に伴い、本ポリシーを改定することがあります。
+    重要な変更がある場合は、本ページの最終更新日を更新してお知らせします。
+  </p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>
+    本ポリシーおよび当アプリに関するお問い合わせは、以下までご連絡ください。
+  </p>
+  <p>
+    メールアドレス: <a href="mailto:katutyefu@gmail.com">katutyefu@gmail.com</a><br>
+    運営者: あるものごはん
+  </p>
+
+  <section class="en">
+    <h2>English Summary</h2>
+    <p>
+      <strong>The developer of this app does not collect any personal information.</strong>
+      There is no account and no login. Your pantry selection, saved recipes, cooking log
+      and settings are stored only in the local storage of your device and are never sent
+      to the developer. They are removed when you uninstall the app.
+    </p>
+    <p>
+      <strong>Recipes are generated by Claude, an AI provided by Anthropic PBC.</strong>
+      When — and only when — you tap "generate", the app sends the following over HTTPS to
+      Anthropic's API: the names of the ingredients you selected, the names of the seasonings
+      in your pantry, the number of servings, the meal slot (breakfast / lunch / dinner) and
+      an optional time limit. <strong>Nothing else is sent</strong> — no name, e-mail, device
+      identifier, advertising identifier, location, photo, saved recipe or cooking history.
+      The app has no free-text field. Requests use the developer's API key and are not tied
+      to any per-user account. See
+      <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic's Privacy
+      Policy</a>.
+    </p>
+    <p>
+      The app is free and supported by <strong>Google AdMob advertising</strong> (banner,
+      interstitial, rewarded video and app open formats). Advertising providers may collect
+      and use advertising identifiers (Android Advertising ID / iOS IDFA), coarse location,
+      device information and ad interaction data to serve relevant ads. This data is handled
+      by those providers under their own privacy policies, not by the developer of this app.
+      <strong>Your ingredients, pantry and cooking history are never passed to advertising.</strong>
+    </p>
+    <p>
+      Users in the EEA, UK and Switzerland are asked for consent through Google's User
+      Messaging Platform. On iOS, a tracking permission prompt is shown; declining it does
+      not restrict any feature of the app.
+    </p>
+    <p>
+      The app contains no analytics or crash reporting SDKs.
+    </p>
+    <p>
+      Questions: <a href="mailto:katutyefu@gmail.com">katutyefu@gmail.com</a>
+    </p>
+    <p class="meta">Effective: August 9, 2026 / Last updated: August 9, 2026</p>
+  </section>
+</main>
+
+<footer>
+  <div class="inner">
+    <a href="index.html">トップ</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+</footer>
+
+</body>
+</html>

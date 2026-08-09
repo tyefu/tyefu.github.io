@@ -1,0 +1,21 @@
+/* あるものごはんのページだけ、色をアプリに合わせる。
+   骨組みは ../style.css をそのまま使い、ここでは変数だけ差し替える。 */
+
+:root {
+  --teal: #b5652a;
+  --teal-dark: #8a4a1c;
+  --surface: #fbf6f0;
+  --border: #ecdfd0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #e08a3c;
+    --teal-dark: #f0ad72;
+    --text: #f0e8e0;
+    --muted: #b5a99d;
+    --bg: #16120f;
+    --surface: #201a16;
+    --border: #33291f;
+  }
+}
