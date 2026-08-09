@@ -1,0 +1,9 @@
+{
+  "_note": "あるものごはんの版の告知。アプリが起動のたびに読む。書き換える前に、アプリ側の DESIGN.md §20 を必ず読むこと。enabled を true にすると、minimumVersion 未満の利用者はアプリを開けなくなる。",
+  "_danger": "minimumVersion に、いま審査に出している版より大きい数を置かないこと。審査員の画面が止まって、その場で落とされる。",
+  "_howToStop": "間違えて全員を止めてしまったら、enabled を false に戻すだけでよい。アプリを出し直す必要はない。",
+  "enabled": false,
+  "minimumVersion": "1.0.0",
+  "latestVersion": "1.0.0",
+  "message": ""
+}
