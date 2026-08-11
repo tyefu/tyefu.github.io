@@ -1,9 +1,23 @@
 {
-  "_note": "あるものごはんの版の告知。アプリが起動のたびに読む。書き換える前に、アプリ側の DESIGN.md §20 を必ず読むこと。enabled を true にすると、minimumVersion 未満の利用者はアプリを開けなくなる。",
-  "_danger": "minimumVersion に、いま審査に出している版より大きい数を置かないこと。審査員の画面が止まって、その場で落とされる。",
-  "_howToStop": "間違えて全員を止めてしまったら、enabled を false に戻すだけでよい。アプリを出し直す必要はない。",
-  "enabled": false,
-  "minimumVersion": "1.0.0",
-  "latestVersion": "1.0.0",
-  "message": ""
+  "_note": "あるものごはんの版の告知。アプリが起動のたびに読む。書き換える前に、アプリ側の DESIGN.md §20 を必ず読むこと。",
+  "_why_split": "iOS と Android は審査の通るタイミングが違う。片方が公開された版をもう片方に要求すると、更新先が存在しないのに止めることになる。だから板を分けてある。片方だけ書き換えてよい。",
+  "_danger": "minimumVersion に、その OS のストアでまだ公開されていない版を置かないこと。審査中なら審査員の画面も止まって、その場で落とされる。",
+  "_howToStop": "間違えて止めてしまったら、その板の enabled を false に戻すだけでよい。アプリを出し直す必要はない。",
+  "_check": "書き換えたら flutter test test/tools/check_update_policy.dart を走らせる。",
+
+  "message": "",
+
+  "ios": {
+    "enabled": false,
+    "minimumVersion": "1.0.0",
+    "latestVersion": "1.0.0",
+    "message": ""
+  },
+
+  "android": {
+    "enabled": false,
+    "minimumVersion": "1.0.0",
+    "latestVersion": "1.0.0",
+    "message": ""
+  }
 }
