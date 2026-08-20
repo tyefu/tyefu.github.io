@@ -1,0 +1,22 @@
+/* ワード人狼のページだけ、色をアプリに合わせる。
+   骨組みは ../style.css をそのまま使い、ここでは変数だけ差し替える。
+   アプリのキーカラーは和紙の背景に映える茶色 (#70380F)。 */
+
+:root {
+  --teal: #70380f;
+  --teal-dark: #4a2409;
+  --surface: #faf6f0;
+  --border: #e6dbcc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #d8a878;
+    --teal-dark: #eec9a3;
+    --text: #f0e7dc;
+    --muted: #b8a894;
+    --bg: #1a1410;
+    --surface: #241c16;
+    --border: #3a2e24;
+  }
+}
