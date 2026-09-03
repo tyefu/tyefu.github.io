@@ -1,0 +1,22 @@
+/* Pairo のページだけ、色をアプリに合わせる。
+   骨組みは ../style.css をそのまま使い、ここでは変数だけ差し替える。
+   アプリのキーカラーは Material 3 の indigo（colorSchemeSeed: Colors.indigo）。 */
+
+:root {
+  --teal: #3949ab;
+  --teal-dark: #283593;
+  --surface: #f3f4fb;
+  --border: #d9dcef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #9fa8da;
+    --teal-dark: #c5cae9;
+    --text: #e8e9f3;
+    --muted: #a6a9bd;
+    --bg: #12131a;
+    --surface: #1b1d27;
+    --border: #2d3040;
+  }
+}
