@@ -1,0 +1,22 @@
+/* 灰坊のページだけ、色をアプリに合わせる。
+   骨組みは ../style.css をそのまま使い、ここでは変数だけ差し替える。
+   アプリのキーカラーは、夜の団地に浮かぶ灰坊の赤い目(#8a1c18)。 */
+
+:root {
+  --teal: #8a1c18;
+  --teal-dark: #5c1210;
+  --surface: #f4f3f1;
+  --border: #dddad5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #e0756a;
+    --teal-dark: #f0a49a;
+    --text: #e8e6e2;
+    --muted: #a8a49e;
+    --bg: #0d0d10;
+    --surface: #17171b;
+    --border: #2c2c32;
+  }
+}
